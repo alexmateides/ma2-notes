@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
-site_name: ma2-notes
-site_url: https://192.168.0.1/ma2-notes
+site_name: notes
+site_url: https://192.168.0.1/notes
 theme:
   name: material
   features:

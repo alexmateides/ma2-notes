@@ -1,3 +1,3 @@
 # Home
 
-**Source Code:**  <https://github.com/alexmateides/ma2-notes>
+**Source Code:**  <https://github.com/alexmateides/notes>
