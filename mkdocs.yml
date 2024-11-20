@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+site_name: ma2-notes
+site_url: https://192.168.0.1/ma2-notes
+theme:
+  name: material
+  features:
+    - content.code.copy
+    - navigation.footer
+    - navigation.expand
+    - navigation.indexes
+  icon:
+    admonition:
+      note: material/alert
+  palette:
+    # Dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      primary: custom
+      accent: blue
+
+    # Light mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+        primary: blue
+        accent: deep orange
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search
