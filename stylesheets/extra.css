@@ -1,0 +1,274 @@
+[data-md-color-scheme="!slate"] {
+    --md-primary-fg-color: #EA1674;
+}
+
+[data-md-color-scheme="!default"] {
+    --md-primary-fg-color: #EA1674;
+}
+
+{
+    omni_color: #EA1674
+;
+}
+
+.admonition h2, .admonition h3, .admonition h4, .admonition h5, .admonition h6 {
+    display: none;
+}
+
+.mjx-math {
+    font-family: "Times New Roman", Times, "Nimbus Roman No9 L", serif;
+}
+
+/* Custom Style for Definition Admonition */
+.admonition.definition {
+    font-size: 1.1em;
+    background-color: #1E2129; /* Dark background */
+    border-top: 5px solid #198754; /* Green top border */
+    border-color: #198754;
+    border-radius: 10px;
+    padding: 20px 15px 15px 15px; /* Extra top padding for title */
+    margin: 20px 0;
+    position: relative; /* Establish positioning context */
+}
+
+/* Style the Admonition title */
+.admonition.definition > .admonition-title {
+    background-color: #198754; /* Green background matching the border */
+    font-size: 1em; /* Title font size */
+    font-weight: bold;
+    color: #BFC3CA; /* Light text color */
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute; /* Position relative to the admonition */
+    top: -12px; /* Move the title upwards to overlap the border */
+    left: 15px; /* Align with the admonition's left padding */
+}
+
+
+/* Ensure math equations inside the Admonition are sized appropriately */
+.admonition.definition .math,
+.admonition.definition .math.display {
+    font-size: 1.1em;
+}
+
+.admonition.definition .admonition-content {
+    flex: 1; /* Allow content to take full width */
+}
+
+.admonition.definition > .admonition-title::before {
+    display: none; /* Hides the icon */
+    content: none; /* Ensures no extra space or content is added */
+}
+
+
+.admonition.algorithm {
+    font-size: 1.1em;
+    background-color: #1E2129;
+    border-top: 5px solid #840A68;
+    border-color: #840A68;
+    border-radius: 10px;
+    padding: 20px 15px 15px 15px;
+    margin: 20px 0;
+    position: relative;
+}
+
+
+.admonition.algorithm > .admonition-title {
+    background-color: #840A68;
+    font-size: 1em;
+    font-weight: bold;
+    color: #BFC3CA;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: -12px;
+    left: 15px;
+}
+
+
+/* Ensure math equations inside the Admonition are sized appropriately */
+.admonition.algorithm .math,
+.admonition.algorithm .math.display {
+    font-size: 1.1em;
+}
+
+.admonition.algorithm .admonition-content {
+    flex: 1; /* Allow content to take full width */
+}
+
+.admonition.algorithm > .admonition-title::before {
+    display: none; /* Hides the icon */
+    content: none; /* Ensures no extra space or content is added */
+}
+
+
+.admonition.theorem {
+    font-size: 1.1em;
+    background-color: #1E2129;
+    border-top: 5px solid #2094F3;
+    border-color: #2094F3;
+    border-radius: 10px;
+    padding: 20px 15px 15px 15px;
+    margin: 20px 0;
+    position: relative;
+}
+
+
+.admonition.theorem > .admonition-title {
+    background-color: #2094F3;
+    font-size: 1em;
+    font-weight: bold;
+    color: #BFC3CA;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: -12px;
+    left: 15px;
+}
+
+
+/* Ensure math equations inside the Admonition are sized appropriately */
+.admonition.theorem .math,
+.admonition.theorem .math.display {
+    font-size: 1.1em;
+}
+
+.admonition.theorem .admonition-content {
+    flex: 1; /* Allow content to take full width */
+}
+
+.admonition.theorem > .admonition-title::before {
+    display: none; /* Hides the icon */
+    content: none; /* Ensures no extra space or content is added */
+}
+
+
+.admonition.proof {
+    font-size: 1.1em;
+    background-color: #1E2129;
+    border-top: 5px solid #6800F2;
+    border-color: #6800F2;
+    border-radius: 10px;
+    padding: 20px 15px 15px 15px;
+    margin: 20px 0;
+    position: relative;
+}
+
+
+.admonition.proof > .admonition-title {
+    background-color: #6800F2;
+    font-size: 1em;
+    font-weight: bold;
+    color: #BFC3CA;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: -12px;
+    left: 15px;
+}
+
+/* Ensure math equations inside the Admonition are sized appropriately */
+.admonition.proof .math,
+.admonition.proof .math.display {
+    font-size: 1.1em;
+}
+
+.admonition.proof .admonition-content {
+    flex: 1; /* Allow content to take full width */
+}
+
+.admonition.proof > .admonition-title::before {
+    display: none; /* Hides the icon */
+    content: none; /* Ensures no extra space or content is added */
+}
+
+.md-typeset details.proof > summary {
+    background-color: #6800F2;
+    font-size: 1em;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: -12px;
+    left: 15px;
+    z-index: 1;
+    cursor: pointer;
+    list-style: none; /* Remove the default arrow */
+}
+
+/* Add a custom arrow */
+.md-typeset details.proof > summary::after {
+    content: '▶'; /* Custom arrow symbol */
+    font-size: 1em;
+    margin-left: 10px; /* Space between the text and arrow */
+    position: relative;
+    left: 10px; /* Move the arrow to the right */
+    top: 14px; /* Adjust to vertically align */
+    transform: translateY(-50%); /* Fine-tune vertical alignment */
+    display: inline-block; /* Required for rotation */
+    transition: transform 0.2s ease; /* Smooth rotation animation */
+}
+
+/* Rotate the arrow when <details> is open */
+.md-typeset details.proof[open] > summary::after {
+    transform: translateY(-50%) rotate(90deg); /* Rotate the arrow 90 degrees */
+}
+
+
+
+.md-typeset details.proof {
+    font-size: 1.1em;
+    background-color: #1E2129;
+    border-top: 5px solid #6800F2;
+    border-color: #6800F2;
+    border-radius: 10px;
+    position: relative;
+    padding-top: 20px; /* Adjust to prevent title overlap */
+}
+
+.md-typeset details.proof > summary::before {
+    display: none;
+    content: none;
+}
+
+
+.admonition.implication {
+    font-size: 1.1em;
+    background-color: #1E2129;
+    border-top: 5px solid #FFC107;
+    border-color: #FFC107;
+    border-radius: 10px;
+    padding: 20px 15px 15px 15px;
+    margin: 20px 0;
+    position: relative;
+}
+
+
+.admonition.implication > .admonition-title {
+    background-color: #FFC107;
+    font-size: 1em;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: -12px;
+    left: 15px;
+}
+
+
+/* Ensure math equations inside the Admonition are sized appropriately */
+.admonition.implication .math,
+.admonition.implication .math.display {
+    font-size: 1.1em;
+}
+
+.admonition.implication .admonition-content {
+    flex: 1; /* Allow content to take full width */
+}
+
+.admonition.implication > .admonition-title::before {
+    display: none; /* Hides the icon */
+    content: none; /* Ensures no extra space or content is added */
+}
