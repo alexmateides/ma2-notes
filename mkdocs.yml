@@ -17,8 +17,8 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Dark mode
-      primary: blue
-      accent: blue
+      primary: 4051B5
+      accent: 4051B5
 
     # Light mode
     - scheme: default
