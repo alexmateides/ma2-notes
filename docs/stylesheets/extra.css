@@ -1,20 +1,18 @@
 [data-md-color-scheme="!slate"] {
-  --md-primary-fg-color: #EA1674;
+    --md-primary-fg-color: #EA1674;
 }
 
 [data-md-color-scheme="!default"] {
-  --md-primary-fg-color: #EA1674;
+    --md-primary-fg-color: #EA1674;
 }
 
 {
-    omni_color: #EA1674;
+    omni_color: #EA1674
+;
 }
 
-#invisible-heading {
-    color: transparent;
-    font-size: 0;
-    height: 0;
-    line-height: 0;
+.admonition h2, .admonition h3, .admonition h4, .admonition h5, .admonition h6 {
+    display: none;
 }
 
 .mjx-math {
@@ -47,7 +45,6 @@
 }
 
 
-
 /* Ensure math equations inside the Admonition are sized appropriately */
 .admonition.definition .math,
 .admonition.definition .math.display {
@@ -62,7 +59,6 @@
     display: none; /* Hides the icon */
     content: none; /* Ensures no extra space or content is added */
 }
-
 
 
 .admonition.algorithm {
@@ -90,7 +86,6 @@
 }
 
 
-
 /* Ensure math equations inside the Admonition are sized appropriately */
 .admonition.algorithm .math,
 .admonition.algorithm .math.display {
@@ -105,8 +100,6 @@
     display: none; /* Hides the icon */
     content: none; /* Ensures no extra space or content is added */
 }
-
-
 
 
 .admonition.theorem {
@@ -134,7 +127,6 @@
 }
 
 
-
 /* Ensure math equations inside the Admonition are sized appropriately */
 .admonition.theorem .math,
 .admonition.theorem .math.display {
@@ -149,8 +141,6 @@
     display: none; /* Hides the icon */
     content: none; /* Ensures no extra space or content is added */
 }
-
-
 
 
 .admonition.proof {
@@ -177,8 +167,6 @@
     left: 15px;
 }
 
-
-
 /* Ensure math equations inside the Admonition are sized appropriately */
 .admonition.proof .math,
 .admonition.proof .math.display {
@@ -194,6 +182,55 @@
     content: none; /* Ensures no extra space or content is added */
 }
 
+.md-typeset details.proof > summary {
+    background-color: #6800F2;
+    font-size: 1em;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: -12px;
+    left: 15px;
+    z-index: 1;
+    cursor: pointer;
+    list-style: none; /* Remove the default arrow */
+}
+
+/* Add a custom arrow */
+.md-typeset details.proof > summary::after {
+    content: '▶'; /* Custom arrow symbol */
+    font-size: 1em;
+    margin-left: 10px; /* Space between the text and arrow */
+    position: relative;
+    left: 10px; /* Move the arrow to the right */
+    top: 14px; /* Adjust to vertically align */
+    transform: translateY(-50%); /* Fine-tune vertical alignment */
+    display: inline-block; /* Required for rotation */
+    transition: transform 0.2s ease; /* Smooth rotation animation */
+}
+
+/* Rotate the arrow when <details> is open */
+.md-typeset details.proof[open] > summary::after {
+    transform: translateY(-50%) rotate(90deg); /* Rotate the arrow 90 degrees */
+}
+
+
+
+.md-typeset details.proof {
+    font-size: 1.1em;
+    background-color: #1E2129;
+    border-top: 5px solid #6800F2;
+    border-color: #6800F2;
+    border-radius: 10px;
+    position: relative;
+    padding-top: 20px; /* Adjust to prevent title overlap */
+}
+
+.md-typeset details.proof > summary::before {
+    display: none;
+    content: none;
+}
 
 
 .admonition.implication {
@@ -219,7 +256,6 @@
     top: -12px;
     left: 15px;
 }
-
 
 
 /* Ensure math equations inside the Admonition are sized appropriately */
