@@ -17,7 +17,7 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Dark mode
-      primary: custom
+      primary: blue
       accent: blue
 
     # Light mode
@@ -29,6 +29,7 @@ theme:
         accent: deep orange
 
 markdown_extensions:
+  - toc
   - attr_list
   - pymdownx.inlinehilite
   - pymdownx.snippets
@@ -37,6 +38,11 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+
 
 extra_css:
   - stylesheets/extra.css
