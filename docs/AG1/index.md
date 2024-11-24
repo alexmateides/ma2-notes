@@ -1,7 +1,7 @@
 # AG1
 
 
-![Image title](../assets/ag1-skripta-with-hookers.png){ align=center }
+![alt text](https://github.com/alexmateides/notes/blob/main/docs/assets/ag1-skripta-with-hookers.png){ align=center }
 
 ---
 
