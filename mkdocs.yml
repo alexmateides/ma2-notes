@@ -6,7 +6,6 @@ theme:
   features:
     - content.code.copy
     - navigation.footer
-    - navigation.expand
     - navigation.indexes
   icon:
     admonition:
@@ -29,6 +28,7 @@ theme:
         accent: deep orange
 
 markdown_extensions:
+  - tables
   - toc
   - attr_list
   - pymdownx.inlinehilite
